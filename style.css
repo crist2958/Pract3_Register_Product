@@ -1,0 +1,124 @@
+body {
+    font-family: 'Kreon', sans-serif;
+    margin:0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-menu li {
+    padding: 15px 20px;
+    transition: all 0.3s;
+}
+.sidebar-menu li:hover {
+    background-color: #34495e;
+}
+.sidebar-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar-menu i {
+    margin-right: 10px;
+    width: 20px;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.input-group label {
+    width: 120px;
+}
+.input-group input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Añade un margen a la derecha para separar del ícono */
+}
+.icon {
+    margin-right: 10px;
+    color: #2c3e50;
+    
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Kreon', sans-serif;
+}
+input[type="submit"] {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #34495e;
+}
+
+table {
+    width: 100%;
+    border: #2c3e50;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px; /* Ajusta el valor según tus preferencias */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+    }
+    .sidebar-header {
+        display: none;
+    }
+    .sidebar-menu span {
+        display: none;
+    }
+    .sidebar-menu i {
+        margin-right: 0;
+    }
+    .sidebar-menu li {
+        text-align: center;
+    }
+
+
+    
+}
+
